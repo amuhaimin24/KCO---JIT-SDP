@@ -42,12 +42,12 @@ conn = db.connect('cross_project.db')
 c = conn.cursor()
 
 resampling = [
-    # ('KCO', KernelOversampling()),
-    # ('Borderline', sv.Borderline_SMOTE1()),
-    # ('ROSE', sv.ROSE()),
-    # ('ADASYN', sv.ADASYN()),
-    # ('SMOTE', sv.SMOTE()),
-    # ('MWMOTE', sv.MWMOTE()),
+    ('KCO', KernelOversampling()),
+    ('Borderline', sv.Borderline_SMOTE1()),
+    ('ROSE', sv.ROSE()),
+    ('ADASYN', sv.ADASYN()),
+    ('SMOTE', sv.SMOTE()),
+    ('MWMOTE', sv.MWMOTE()),
     ('MAHAKIL', MAHAKIL())
      ]
 
